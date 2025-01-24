@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_background">
+
+    <!-- LinearLayout për të vendosur elementet në qendër të ekranit -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:padding="16dp">
+
+        <!-- TextView që shfaq mesazhin e përfundimit të dërgesës -->
+        <TextView
+            android:id="@+id/delivery_complete_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="@string/delivery_complete_text"
+            android:textColor="@android:color/black"
+            android:textSize="25sp" />
+
+        <!-- TextView që shfaq mesazhin shoqërues për dërgesën -->
+        <TextView
+            android:id="@+id/delivery_message_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/delivery_complete_text1"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:layout_marginBottom="30dp"
+            android:textAlignment="center" />
+
+        <!-- Butoni për të shkuar në ekranin kryesor -->
+        <Button
+            android:id="@+id/go_home_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:text="@string/go_home_button"
+            android:layout_marginBottom="30dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:minWidth="200dp"
+            android:minHeight="56dp"/>
+
+        <!-- ImageView që shfaq një imazh për dërgesën -->
+        <ImageView
+            android:id="@+id/delivery_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/delivery"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"/>
+    </LinearLayout>
+</RelativeLayout>

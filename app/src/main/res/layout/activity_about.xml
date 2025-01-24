@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_background">
+
+    <!-- Butoni për kthim prapa -->
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/back"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="16dp" />
+
+    <!-- Titulli i parë TextView -->
+    <TextView
+        android:id="@+id/about_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/back_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/about_title"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <!-- TextView për informacion -->
+    <TextView
+        android:id="@+id/about_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/about_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/about_info"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <!-- Titulli i dytë TextView -->
+    <TextView
+        android:id="@+id/contacts_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/about_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="@string/contacts_title"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <!-- TextView për informacionin e kontaktit -->
+    <TextView
+        android:id="@+id/contact_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contacts_title"
+        android:layout_centerHorizontal="true"
+        android:padding="16dp"
+        android:gravity="center"
+        android:text="@string/contact_info"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+</RelativeLayout>

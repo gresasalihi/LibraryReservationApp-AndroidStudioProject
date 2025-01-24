@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Menu navigimi me katër opsione. -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_about_us"
+            android:icon="@drawable/nav_about"
+            android:title="@string/nav_about_us"
+            android:titleTextColor="@color/black" />
+        <item
+            android:id="@+id/nav_reserved"
+            android:icon="@drawable/nav_reserved"
+            android:title="@string/nav_reserved_books"
+            android:titleTextColor="@color/black" />
+
+        <item
+            android:id="@+id/nav_delivery"
+            android:icon="@drawable/nav_delivery"
+            android:title="@string/nav_delivery"
+            android:titleTextColor="@color/black" />
+        
+    </group>
+
+    <item
+        android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/nav_logout"
+                android:title="@string/nav_logout"
+                android:titleTextColor="@color/black" />
+        </menu>
+    </item>
+
+</menu>

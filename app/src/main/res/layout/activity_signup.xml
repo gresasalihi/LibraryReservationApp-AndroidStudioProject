@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_background">
+
+    <!-- Butoni për kthim -->
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/back"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="16dp"/>
+
+    <!-- Layout vertikal për fushat e regjistrimit -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp"
+        android:layout_centerInParent="true">
+
+        <!-- Tekst për t'u regjistruar -->
+        <TextView
+            android:id="@+id/signup_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="17dp"
+            android:gravity="center"
+            android:text="@string/signup_call"
+            android:textColor="@android:color/black"
+            android:textSize="25sp" />
+
+        <!-- Tekst për moto-n e krijimit të llogarisë -->
+        <TextView
+            android:id="@+id/create_account_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="37dp"
+            android:gravity="center"
+            android:text="@string/create_account_motto"
+            android:textColor="@android:color/black"
+            android:textSize="17sp" />
+
+        <!-- Fusha e inputit për emrin e përdoruesit -->
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:autofillHints="username"
+            android:background="@drawable/edit_text_background"
+            android:backgroundTint="@android:color/white"
+            android:hint="@string/username"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/darker_blue" />
+
+        <!-- Fusha e inputit për fjalëkalimin -->
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:autofillHints="password"
+            android:background="@drawable/edit_text_background"
+            android:backgroundTint="@android:color/white"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/darker_blue" />
+
+        <!-- Fusha e inputit për adresën -->
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:autofillHints="address"
+            android:background="@drawable/edit_text_background"
+            android:backgroundTint="@android:color/white"
+            android:hint="@string/address"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/darker_blue" />
+
+        <!-- Butoni për krijimin e llogarisë -->
+        <Button
+            android:id="@+id/signup_button"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_button"
+            android:text="@string/create_account"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:minWidth="200dp"
+            android:minHeight="56dp"/>
+    </LinearLayout>
+</RelativeLayout>

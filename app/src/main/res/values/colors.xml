@@ -1,0 +1,11 @@
+<resources>
+    <color name="blue">#2196F3</color>
+    <color name="darker_blue">#1976D2</color>
+    <color name="holo_blue_light">#33B5E5</color>
+    <color name="holo_red_light">#FF4444</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="button_background">#0e6f76</color>
+    <color name="layout_background">#f6e1ca</color>
+    <color name="background_color">#33B5E5</color>
+</resources>

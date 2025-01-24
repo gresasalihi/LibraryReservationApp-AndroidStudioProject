@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@color/layout_background">
+
+    <!-- ImageView për logon e bibliotekës -->
+    <ImageView
+        android:id="@+id/library_logo"
+        android:layout_width="250dp"
+        android:layout_height="240dp"
+        android:layout_marginBottom="45dp"
+        android:contentDescription="@string/library_image"
+        android:src="@drawable/logo" />
+
+    <!-- EditText për hyrjen e emrit të përdoruesit -->
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:autofillHints="username"
+        android:background="@drawable/edit_text_background"
+        android:backgroundTint="@android:color/white"
+        android:hint="@string/username"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/darker_blue" />
+
+    <!-- EditText për hyrjen e fjalëkalimit -->
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:autofillHints="password"
+        android:background="@drawable/edit_text_background"
+        android:backgroundTint="@android:color/white"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/darker_blue" />
+
+    <!-- Butoni për hyrje në llogari -->
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/log_in"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:minWidth="200dp"
+        android:minHeight="56dp"/>
+
+    <!-- Butoni për krijimin e një llogarie të re -->
+    <Button
+        android:id="@+id/signup_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/sign_up"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:minWidth="200dp"
+        android:minHeight="56dp"/>
+</LinearLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout">
+
+    <!-- Layout kryesor i përmbajtjes me toolbar -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/layout_background">
+
+        <!-- Toolbar në krye -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/layout_background"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:title="@string/menu_title"
+            app:titleTextAppearance="@style/CustomToolbarTitle"
+            app:subtitleTextColor="@color/black"
+            android:elevation="4dp">
+
+            <!-- Butoni i navigimit në toolbar -->
+            <ImageButton
+                android:id="@+id/toolbar_nav_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="start"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/open_nav"
+                android:padding="8dp"
+                android:layout_marginStart="18dp"/>
+        </androidx.appcompat.widget.Toolbar>
+
+        <!-- Imazhi i bibliotekës -->
+        <ImageView
+            android:id="@+id/library_image"
+            android:layout_width="230dp"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="30dp"
+            android:contentDescription="@string/library_image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo" />
+
+        <!-- Formulari për rezervimin e librit -->
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/library_image"
+            android:layout_centerHorizontal="true"
+            android:padding="16dp"
+            android:background="@android:color/white"
+            android:layout_margin="16dp"
+            android:elevation="4dp"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#b3d6d4">
+
+            <!-- Teksti i ftesës -->
+            <TextView
+                android:id="@+id/invitation_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/invitation_text"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Input për ID-në e librit -->
+            <EditText
+                android:id="@+id/editText_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_book_ID"
+                android:inputType="text"
+                android:layout_marginBottom="16dp"
+                android:padding="10dp"
+                android:minHeight="48dp"
+                android:background="@drawable/edit_text_background"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/darker_blue"
+                android:autofillHints="autofill_hint_id"
+                android:backgroundTint="@color/white"
+                android:importantForAutofill="yes" />
+
+            <!-- Input për emrin e librit -->
+            <EditText
+                android:id="@+id/editText_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_book_name"
+                android:inputType="text"
+                android:padding="10dp"
+                android:minHeight="48dp"
+                android:background="@drawable/edit_text_background"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/darker_blue"
+                android:autofillHints="autofill_hint_name"
+                android:backgroundTint="@color/white"
+                android:importantForAutofill="yes" />
+
+            <!-- Pjesa e butonave -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="20dp">
+
+                <!-- Butoni për të futur të dhënat -->
+                <Button
+                    android:id="@+id/btn_insert"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_insert"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:background="@drawable/rounded_button"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Butoni për të përditësuar të dhënat -->
+                <Button
+                    android:id="@+id/btn_update"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_update"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:background="@drawable/rounded_button"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Butoni për të fshirë/anuluar të dhënat -->
+                <Button
+                    android:id="@+id/btn_delete"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_delete"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:background="@drawable/rounded_button"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Butoni për të parë të gjitha të dhënat -->
+                <Button
+                    android:id="@+id/btn_view_all"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_viewall"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:background="@drawable/rounded_button"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- Navigimi për menynë e drawer-it -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        android:background="@color/layout_background"
+        app:menu="@menu/nav_menu"/>
+</androidx.drawerlayout.widget.DrawerLayout>
