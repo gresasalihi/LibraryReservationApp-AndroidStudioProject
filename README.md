@@ -50,9 +50,9 @@ This contains all source files and configuration.
 1. Clone the repository:
 ```bash
 git clone https://github.com/your-username/LibraryReservationApp-AndroidStudioProject-main.git
-Open the project in Android Studio.
-
-Build the project and run it on an emulator or a connected device.
+```
+2. Open the project in Android Studio.
+3. Build the project and run it on an emulator or a connected device.
 
 🛠️ Notes
 Make sure your emulator or device has internet access if your app connects to an external database or API.
