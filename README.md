@@ -54,7 +54,7 @@ git clone https://github.com/your-username/LibraryReservationApp-AndroidStudioPr
 2. Open the project in Android Studio.
 3. Build the project and run it on an emulator or a connected device.
 
-🛠️ Notes
+## 🛠️ Notes
 Make sure your emulator or device has internet access if your app connects to an external database or API.
 
 This project is meant for educational/demo purposes.
